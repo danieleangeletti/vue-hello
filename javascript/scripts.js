@@ -1,10 +1,20 @@
 const { createApp } = Vue;
 
-createApp({
+const app = createApp({
     data() {
         return {
+            count: 0,
             message: "Hello world!",
-            logo_image: "./img/Logo.png"
+            logo_image: "./img/Logo.png",
+        };
+    },
+
+    methods: {
+        changeMessage() {
+            this.message = `Counter ${this.count}`;
+            this.count++;
         }
     }
-}).mount("#root");
+})
+
+app.mount("#root");

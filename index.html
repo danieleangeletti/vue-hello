@@ -23,7 +23,9 @@
                 {{ message }}
             </h1>
 
-            <img v-bind:src="logo_image" alt="">
+            <img :src="logo_image" alt="">
+
+            <button @click="changeMessage">Clicca</button>
         
         </div>
 
