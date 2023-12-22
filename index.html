@@ -10,20 +10,23 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="./css/style.css">
+
+        <!-- Vue.js -->
+        <script src="https://unpkg.com/vue@3"></script>
     </head>
+
     <body>
-       <header>
+
+        <div id="root">
+
+            <h1>
+                {{ message }}
+            </h1>
+
+            <img v-bind:src="logo_image" alt="">
         
-       </header>
+        </div>
 
-       <main>
-
-       </main>
-
-       <footer>
-        
-       </footer>
-
-       <script type="text/javascript" src="./javascript/scripts.js" ></script>
+       <script type="text/javascript" src="./javascript/scripts.js"></script>
     </body>
 </html>
